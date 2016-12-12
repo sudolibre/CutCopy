@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+enum Mode : CustomStringConvertible {
+    case normal, reverse, naked
+    
+    var description: String {
+        switch self {
+        case .normal:
+            return "normally"
+        case .reverse:
+            return "in reversed order"
+        case .naked:
+            return "in a random order"
+        }
+    }
+}
